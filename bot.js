@@ -34,9 +34,10 @@ bot.on('message', function (user, userID, channelID, message, evt) {
             case 'Hello':
                 bot.sendMessage({
                     to: channelID,
-                    message: 'urmumgei lol',
-					message: 'Uff GotTem'
-                });
+					message: 'urmumgei lol'});
+				bot.sendMessage({
+					to: channelID,
+					message: 'Uff GotTem'});
             break;
             // Just add any case commands if you want to..
          }
