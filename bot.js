@@ -25,12 +25,11 @@ bot.on('message', function (user, userID, channelID, message, evt) {
     // Our bot needs to know if it will execute a command
     // It will listen for messages that will start with `>>`
     if (message.substring(0, 2) == '>>') {
-        var args = message.substring(2).split(' ');
+        var args = message.substring(2).split();
         var cmd = args[0];
-       
-        args = args.splice(1);
+        
+		args = args.splice(1);
         switch(cmd) {
-            // >>ping
             case 'Hello':
                 bot.sendMessage({
                     to: channelID,
@@ -38,7 +37,25 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 				bot.sendMessage({
 					to: channelID,
 					message: 'Uff GotTem'});
+			break;
+			
+			case 'test':
+				bot.sendMessage({
+                    to: channelID,
+					message: 'Everything is working fine for now, Just relax!'});
             break;
+			
+			case 'Who is Sonic':
+				bot.sendMessage({
+                    to: channelID,
+					message: 'Oh, He is just a water bottle'});
+			break;
+			
+			case 'Fuck Off':
+				bot.sendMessage({
+                    to: channelID,
+					message: 'NO U '+user});
+			break;
             // Just add any case commands if you want to..
          }
      }
