@@ -51,6 +51,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 					message: 'Oh, He is just a water bottle'});
 			break;
 			
+			case 'Who is Potato':
+				bot.sendMessage({
+                    to: channelID,
+					message: 'He is the EdgeLord'});
+			break;
+			
 			case 'Fuck Off':
 				bot.sendMessage({
                     to: channelID,
