@@ -23,7 +23,7 @@ bot.on('ready', function (evt) {
 
 bot.on('ready', () => {
     // Set bot status to: "Playing with JavaScript"
-    client.user.setActivity("with JavaScript")
+    bot.user.setActivity("with JavaScript")
 });
 
 bot.on('message', function (user, userID, channelID, message, evt) {
