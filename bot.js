@@ -19,16 +19,7 @@ bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
-});
-
-bot.on('ready', () => {
-    // Set bot status to: "Playing with JavaScript"
-    bot.user.setActivity("with JavaScript", {type: "PLAYING"});
-
-    // Alternatively, you can set the activity to any of the following:
-    // PLAYING, STREAMING, LISTENING, WATCHING
-    // For example:
-    // client.user.setActivity("TV", {type: "WATCHING"})
+	bot.user.setActivity("Game");
 });
 
 bot.on('message', function (user, userID, channelID, message, evt) {
