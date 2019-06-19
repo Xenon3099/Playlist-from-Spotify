@@ -21,7 +21,7 @@ bot.on('ready', function (evt) {
     logger.info(bot.username + ' - (' + bot.id + ')');
 });
 
-client.on('ready', () => {
+bot.on('ready', () => {
     // Set bot status to: "Playing with JavaScript"
     client.user.setActivity("with JavaScript")
 });
