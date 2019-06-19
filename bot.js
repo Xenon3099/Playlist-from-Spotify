@@ -19,11 +19,7 @@ bot.on('ready', function (evt) {
     logger.info('Connected');
     logger.info('Logged in as: ');
     logger.info(bot.username + ' - (' + bot.id + ')');
-});
-
-bot.on('ready', () => {
-    // Set bot status to: "Playing with JavaScript"
-    bot.user.setActivity("with JavaScript")
+	bot.user.setActivity("with JavaScript");
 });
 
 bot.on('message', function (user, userID, channelID, message, evt) {
