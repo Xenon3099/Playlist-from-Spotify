@@ -57,6 +57,12 @@ bot.on('message', function (user, userID, channelID, message, evt) {
 					message: 'He is the EdgeLord'});
 			break;
 			
+			case 'Who is RainbowFurt':
+				bot.sendMessage({
+                    to: channelID,
+					message: 'I have never met him but legend has it, he is still reconnecting'});
+			break;
+			
 			case 'Fuck Off':
 				bot.sendMessage({
                     to: channelID,
